@@ -1,0 +1,46 @@
+{
+  "name": "account-kit-test",
+  "version": "1.0.0",
+  "description": "An Example Using Account Kit",
+  "main": "index.ts",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "contributors": [],
+  "scripts": {
+    "dev": "",
+    "test": "",
+    "getAccountAddress": "npx tsx index.ts",
+    "sendUo": "npx tsx send.ts",
+    "sendUoWithSponsor": "npx tsx sponsor.ts",
+    "sendUoWithPm": "npx tsx send_uo_with_pm.ts",
+    "send_userOperation_with_paymaster": "npx tsx send_userOperation_with_paymaster.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@alchemy/aa-accounts": "^2.4.0",
+    "@alchemy/aa-alchemy": "^2.4.0",
+    "@alchemy/aa-core": "^2.3.1",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2",
+    "viem": "^2.7.11"
+  }
+}
