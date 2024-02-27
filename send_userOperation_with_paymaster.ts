@@ -160,9 +160,6 @@ async function sendJsonRpcRequest(uoStruct: Deferrable<UserOperationStruct>): Pr
       paymasterDataMiddleware: PaymasterDataMiddlewareOverrideFunction,
     });
 
-    const resultingUO  = await provider.buildUserOperation(userOpData);
-    console.log("Sending UserOperation: ", resultingUO);
-
   // Send a user operation from your smart contract account
   const opHashResult = await provider.sendUserOperation(userOpData);
   console.log("Resulting UserOperation: ", opHashResult); // Log the user operation hash
